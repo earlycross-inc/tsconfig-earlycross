@@ -1,0 +1,38 @@
+{
+  "name": "tsconfig-earlycross",
+  "version": "1.0.0",
+  "description": "TSConfig presets for EarlyCross TypeScript project",
+  "keywords": [
+    "tsconfig",
+    "typescript"
+  ],
+  "homepage": "https://github.com/earlycross-inc/tsconfig-earlycross#readme",
+  "bugs": {
+    "url": "https://github.com/earlycross-inc/tsconfig-earlycross/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earlycross-inc/tsconfig-earlycross.git"
+  },
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "package.json",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "format": "prettier --loglevel warn --write .",
+    "test:static": "run-s check:*",
+    "check:compile": "tsc --noEmit",
+    "check:format": "prettier --check ."
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5.4"
+  }
+}
